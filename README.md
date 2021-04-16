@@ -4,9 +4,9 @@
 
 I wrote this while developing an ARM based product for a company in England
 about 17 years ago. I needed to talk to the target on an RS-232 connection and
-download a bootstrap program using the [XMODEM][] protocol (this was dictated
-by the processor firmware when it did not find a bootloader on first power on).
-Use of XMODEM was and is pretty common in embedded environments, partly for its
+download a bootstrap program using the [XMODEM][] protocol (this was dictated by
+the processor firmware when it did not find a bootloader on first power on). Use
+of XMODEM was and is pretty common in embedded environments, partly for its
 simplicity.
 
 Try as I might I could not get any of the usual terminal emulators with XMODEM
@@ -50,8 +50,8 @@ $ dumb [options]
 - `-h file` --- set the history file name for GNU readline (default: .dumb).
 - `-l tty` --- set the tty for the target system (default: /dev/ttyS0).
 - `-b baud` --- set the baudrate (default: 115200).
-- `-e ch` --- set the escape character; specify a numeric value or `^x`
-  notation (default `^A`).
+- `-e ch` --- set the escape character; specify a numeric value or `^x` notation
+  (default `^A`).
 
 Dumb copies all input to the remote and all output from the remote is echoed to
 the terminal. When the escape character is entered, dumb breaks out of normal
